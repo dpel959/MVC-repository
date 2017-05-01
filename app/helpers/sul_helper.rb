@@ -1,0 +1,2 @@
+module SulHelper
+end

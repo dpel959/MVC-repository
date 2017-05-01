@@ -1,0 +1,27 @@
+
+
+<div class="row">
+    <div class="col-md-offset-2 col-md-8  text-center"> <!--여기서도 text-center 사용가능-->
+        <h1>너가 오늘 먹을 음식을 알려주겠다</h1>
+    </div>
+</div>
+<p><%= @foods.sample %></p>
+
+<!-- Small modal -->
+<!--버튼위치 지정-->
+<div class="col-md-offset-4 col-md-4 text-center">
+    <button type="button" class="btn btn-primary" data-toggle="modal" data-target=".bs-example-modal-sm">확인하기!</button>
+</div>
+
+
+<!--Modal Page-->
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content text-center" style="padding: 60px">
+        <!--text-center이 텍스트를 가운데 정렬시켜줌-->
+        <!--style="padding: 60px" 위 아래 양옆을 둘다 60픽셀로 맞추겠다는 것.-->
+      <p><%= @foods.sample %></p><!--여기에 modal에 넣고 싶은 컨텐츠들을 넣음-->
+      
+    </div>
+  </div>
+</div>
